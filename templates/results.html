@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Feedback</h1>
+        <div class="feedback">{{ feedback | safe }}</div>
+        <br>
+        <a href="/">← Analyze another resume</a>
+    </div>
+</body>
+</html>
